@@ -24,10 +24,9 @@ function createGalleryItemsMarkup(items) {
     })
     .join('');
 }
-// create modal
+
 function onImgClick(e) {
   e.preventDefault();
-  // if (e.target.nodeName !== "IMG") return;
 
   const isItemImage = e.target.classList.contains('gallery__image');
   if (!isItemImage) return;
